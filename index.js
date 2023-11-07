@@ -5,7 +5,7 @@ let antLoop= true;//literalmente um anti loop
 while (antLoop) {
     const entrada = prompt("Digite '0' para ver a experiência ou a quantidade de experiência ganha (ou digite 0 para encerrar):");
   
-    /* Essa condição não foi solicitado pelo professor, mas achei interessante acrescentar uma saída e a opção de desistir do héroi */
+    /* Essa condição não foi solicitado pelo professor, mas achei interessante acrescentar uma saída e a opção de desistir do héroi.*/
     
     if (entrada === "x") {
       // Exibe a experiência atual do herói
