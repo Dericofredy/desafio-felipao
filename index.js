@@ -1,13 +1,16 @@
 // Inicializa as variáveis do herói
 const nomeHeroi = prompt("Digite o nome do herói:");
 let xpHeroi = 0;
-
-while (true) {
+let antLoop= true;//literalmente um anti loop
+while (antLoop) {
     const entrada = prompt("Digite '0' para ver a experiência ou a quantidade de experiência ganha (ou digite 0 para encerrar):");
   
-    if (entrada === "ops") {
+    /*  */
+
+    if (entrada === "x") {
       // Exibe a experiência atual do herói
-      console.log("Experiência do Herói " + nomeHeroi + " : " + xpHeroi);
+      console.log("O heroi " + nomeHeroi + " decidiu parar, suas experiência e de :"+xpHeroi);
+      antLoop=false;//força a sair do loop da função while
     } else {
       const ganhoXP = parseInt(entrada);
   
