@@ -1,9 +1,9 @@
 console.log("Inicio da calculadora de partidas ranqueadas.");
 
 function calcularNivel(vitorias, derrotas) {
-    var saldoVitorias = vitorias - derrotas;
+    let saldoVitorias = vitorias - derrotas;
 
-    var nivel;
+    let nivel;
     if (vitorias >0 && vitorias <= 10) {
         nivel = "Ferro";
     } else if (vitorias >= 11 && vitorias <= 20) {
@@ -33,13 +33,13 @@ function exibirMensagem(heroi) {
 }
 
 // Entrada de dados do usuário
-var quantidadePartidas = parseInt(prompt("Digite a quantidade de partidas:"));
+let quantidadePartidas = parseInt(prompt("Digite a quantidade de partidas:"));
 
-for (var i = 0; i < quantidadePartidas; i++) {
-    var vitorias = parseInt(prompt("Digite o número de vitórias na partida " + (i + 1) + ":"));
-    var derrotas = parseInt(prompt("Digite o número de derrotas na partida " + (i + 1) + ":"));
+for (let i = 0; i < quantidadePartidas; i++) {
+    let vitorias = parseInt(prompt("Digite o número de vitórias na partida " + (i + 1) + ":"));
+    let derrotas = parseInt(prompt("Digite o número de derrotas na partida " + (i + 1) + ":"));
 
-    var resultado = calcularNivel(vitorias, derrotas);
+    let resultado = calcularNivel(vitorias, derrotas);
     exibirMensagem(resultado);
 }
 
