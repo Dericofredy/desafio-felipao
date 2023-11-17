@@ -27,12 +27,13 @@ function calcularNivel(vitorias, derrotas) {
         nivel: nivel
     };
 }
+//Como foi solicitado usar funções, criou-se a função de exição de mensagens
 
 function exibirMensagem(heroi) {
     console.log("O Herói tem um saldo de " + heroi.saldoVitorias + " está no nível de " + heroi.nivel);
 }
 
-// Entrada de dados do usuário
+// Entrada de dados do usuário, pois não fazia sentido deixar a sorte a inserção de valores das partidas, vitórias e derrotas.
 let quantidadePartidas = parseInt(prompt("Digite a quantidade de partidas:"));
 
 for (let i = 0; i < quantidadePartidas; i++) {
