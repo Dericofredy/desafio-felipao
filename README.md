@@ -1,4 +1,7 @@
-<h1 align="center"> Desafio de Projeto - NÍVEL DO HÉROI</h1>
+<h1 align="center"> Desafio de Projeto </h1>
+<p></p>
+<h2><a href="https://github.com/Dericofredy/desafio-felipao/blob/main/index.js" target="_blank">- NÍVEL DO HÉROI</a></h2>
+<h2><a href="https://github.com/Dericofredy/desafio-felipao/blob/main/Calculadora-de-partidas-Rankeadas-dio" target="_blank">- PARTIDAS RANQUEADAS</a></h2>
 
 Usando recursos e códigos em:
 <div>
