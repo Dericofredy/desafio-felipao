@@ -1,0 +1,46 @@
+console.log("Inicio da calculadora de partidas ranqueadas.");
+
+function calcularNivel(vitorias, derrotas) {
+    var saldoVitorias = vitorias - derrotas;
+
+    var nivel;
+    if (vitorias >0 && vitorias <= 10) {
+        nivel = "Ferro";
+    } else if (vitorias >= 11 && vitorias <= 20) {
+        nivel = "Bronze";
+    } else if (vitorias >= 21 && vitorias <= 50) {
+        nivel = "Prata";
+    } else if (vitorias >= 51 && vitorias <= 80) {
+        nivel = "Ouro";
+    } else if (vitorias >= 81 && vitorias <= 90) {
+        nivel = "Diamante";
+    } else if (vitorias >= 91 && vitorias <= 100) {
+        nivel = "Lendário";
+    } else if (vitorias >= 101) {
+        nivel = "Imortal";
+    } else {
+        nivel = "Não existe";
+    }
+
+    return {
+        saldoVitorias: saldoVitorias,
+        nivel: nivel
+    };
+}
+
+function exibirMensagem(heroi) {
+    console.log("O Herói tem um saldo de " + heroi.saldoVitorias + " está no nível de " + heroi.nivel);
+}
+
+// Entrada de dados do usuário
+var quantidadePartidas = parseInt(prompt("Digite a quantidade de partidas:"));
+
+for (var i = 0; i < quantidadePartidas; i++) {
+    var vitorias = parseInt(prompt("Digite o número de vitórias na partida " + (i + 1) + ":"));
+    var derrotas = parseInt(prompt("Digite o número de derrotas na partida " + (i + 1) + ":"));
+
+    var resultado = calcularNivel(vitorias, derrotas);
+    exibirMensagem(resultado);
+}
+
+console.log("Fim da calculadora de partidas ranqueadas.");
