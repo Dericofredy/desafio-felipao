@@ -2,6 +2,8 @@
 <p></p>
 <h2><a href="https://github.com/Dericofredy/desafio-felipao/blob/main/index.js" target="_blank">- NÍVEL DO HÉROI</a></h2>
 <h2><a href="https://github.com/Dericofredy/desafio-felipao/blob/main/Calculadora-de-partidas-Rankeadas-dio" target="_blank">- PARTIDAS RANQUEADAS</a></h2>
+<h2><a href="https://github.com/Dericofredy/desafio-felipao/blob/main/Escrevendo_as_classes_de_um_Jogo.html" target="_blank">- ESCREVENDO CLASSES DE UM JOGO</a></h2>
+
 
 Usando recursos e códigos em:
 <div>
