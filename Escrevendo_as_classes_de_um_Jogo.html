@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrada em Classe</title>
+</head>
+<body>
+
+<script>
+class Heroi {
+  constructor() {
+    this.nome = this.obterEntrada("Digite o nome do herói:");
+    this.idade = parseInt(this.obterEntrada("Digite a idade do herói:"), 10);
+    this.tipo = this.obterEntrada("Digite o tipo do herói (ex: guerreiro, mago, monge, ninja):");
+  }
+
+  obterEntrada(mensagem) {
+    return prompt(mensagem);
+  }
+
+  atacar() {
+    let ataque = "";
+
+    switch (this.tipo.toLowerCase()) {
+      case "mago":
+        ataque = "usou magia";
+        break;
+      case "guerreiro":
+        ataque = "usou espada";
+        break;
+      case "monge":
+        ataque = "usou artes marciais";
+        break;
+      case "ninja":
+        ataque = "usou shuriken";
+        break;
+      default:
+        ataque = "um ataque diferente do normal";
+    }
+
+    console.log(`O heroi ${this.tipo} de nome ${this.nome}, de ${this.idade} anos, atacou usando ${ataque}`);
+  }
+}
+
+// Exemplo de uso da classe
+const heroi = new Heroi();
+heroi.atacar();
+</script>
+
+</body>
+</html>
