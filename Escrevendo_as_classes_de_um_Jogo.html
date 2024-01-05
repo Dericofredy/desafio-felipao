@@ -1,3 +1,6 @@
+<!-- Exercício criado em extensão HTML -->
+<!-- A ideia é que no futuro consiga usar chamadas de script por link -->
+
 <!DOCTYPE html>
 <html lang="pt"> 
 <head>
@@ -7,17 +10,21 @@
 </head>
 <body>
 
+<!-- INÍCIO DO CÓDIGO JAVASCRIPT -->
 <script>
+/*definição de uma classe Heroi*/
 class Heroi {
+/*método construtor da classe Heroi*/
   constructor() {
-    this.nome = this.obterEntrada("Digite o nome do herói:");
-    this.idade = parseInt(this.obterEntrada("Digite a idade do herói:"), 10);
-    this.tipo = this.obterEntrada("Digite o tipo do herói (ex: guerreiro, mago, monge, ninja):");
+    this.nome = this.obterEntrada("Digite o nome do herói:");/*propriedade da instância da classe Heroi atribuido valor pela função de entrada [obterEntrada :nome]*/
+    this.idade = parseInt(this.obterEntrada("Digite a idade do herói:"), 10);/*propriedade da instância da classe Heroi atribuido valor númerico convertido na entrada por [parseInt] na função de entrada [obterEntrada :idade]*/
+    this.tipo = this.obterEntrada("Digite o tipo do herói (ex: guerreiro, mago, monge, ninja):");/*propriedade da instância da classe Heroi atribuido valor pela função de entrada [obterEntrada :tipo de heroi]*/
   }
-
+/*Função de obtem as entradas pelo metodo prompt*/
   obterEntrada(mensagem) {
     return prompt(mensagem);
   }
+/*Método da classe [Heroi] que define o ataque de acordo com o tipo*/
 
   atacar() {
     let ataque = "";
@@ -38,15 +45,17 @@ class Heroi {
       default:
         ataque = "um ataque diferente do normal";
     }
-
+    /*Impressão do tipo do heroi, de seu nome, sua idade e qual ataque realizou*/
     console.log(`O heroi ${this.tipo} de nome ${this.nome}, de ${this.idade} anos, atacou usando ${ataque}`);
   }
 }
 
-// Exemplo de uso da classe
+/*Um objeto heroi é criado a partir da classe, e então o método [atacar()] desse objeto é chamado para realizar a ação de ataque do herói.
+O resultado desse ataque será impresso no console, conforme definido no método atacar().*/
 const heroi = new Heroi();
 heroi.atacar();
 </script>
+<!-- FIM DO CÓDIGO JAVASCRIPT -->
 
 </body>
 </html>
